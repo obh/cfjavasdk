@@ -1,0 +1,3 @@
+#Compile protos
+
+protoc -I=. --java_out=/Users/rohitsharma/github/cf-java-sdk/src/main/java ./order.proto

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package com.cashfree.pg.generated;
+
+option java_multiple_files = true;
+
+message Order {
+  optional string id = 1;
+  double order_amount = 2;
+  optional string order_currency = 3 ;
+  CustomerDetails customer_details = 4;
+
+}
+
+message CustomerDetails {
+  string customer_id = 1;
+  string customer_email = 2;
+  string customer_phone = 3;
+}
